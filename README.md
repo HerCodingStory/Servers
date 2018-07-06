@@ -76,3 +76,9 @@ This server is supposed to:
 - The web server only has to display one, dynamic page. The page will display all the cookies that the browser sends to the server.
 - The web server should write two cookies on each response. You get to determine the names and values of the cookies that your server sends.
 
+Some Website Pictures:
+![alt text](https://github.com/cristyevr94/Servers/blob/master/index.PNG)
+
+![alt text](https://github.com/cristyevr94/Servers/blob/master/mail-client-test1.PNG)
+
+![alt text](https://github.com/cristyevr94/Servers/blob/master/mail-client-test2.PNG)
