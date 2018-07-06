@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+    			function loadDoc(id)
+    			{
+  				var xhttp = new XMLHttpRequest();
+  				xhttp.onreadystatechange = function()
+        			{
+    					if (this.readyState == 4 && this.status == 200)
+    					{
+            					document.getElementById("demo").innerHTML = this.responseText;
+					}
+				}
+
+				if (id.indexOf("1") > -1)
+				{
+				  xhttp.open("GET", "UsCities.txt", true);
+				  xhttp.send();
+				}
+				else if (id.indexOf("2") > -1)
+				{
+				  xhttp.open("GET", "VeCities.txt", true);
+				  xhttp.send();
+				}
+				else if (id.indexOf("3") > -1)
+				{
+				  xhttp.open("GET", "GeCities.txt", true);
+				  xhttp.send();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="demo">
+  			<h2>Changes depending on button pressed</h2>
+
+  			<button type="button" id="button1" onclick="loadDoc('1')">United States</button>
+  			<button type="button" id="button2" onclick="loadDoc('2')">Venezuela</button>
+  			<button type="button" id="button3" onclick="loadDoc('3')">Germany</button>
+		</div>
+
+	</body>
+</html>
+
